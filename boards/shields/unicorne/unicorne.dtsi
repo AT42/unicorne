@@ -42,8 +42,3 @@
         prechargep = <0x22>;
     };
 };
-
-&niceview {
-    status = "okay";  // Enables the display
-    label = "NiceView";
-};

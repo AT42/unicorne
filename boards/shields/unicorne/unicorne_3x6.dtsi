@@ -19,30 +19,3 @@ RC(2,0) RC(2,1) RC(2,2) RC(2,3) RC(2,4) RC(2,5)  RC(2,6) RC(2,7) RC(2,8) RC(2,9)
 
     // TODO: per-key RGB node(s)?
 };
-
-/ {
-    display_status {
-        compatible = "zmk,display-status";
-        layer_texts = <&layer_0_text>, <&layer_1_text>, <&layer_2_text>;
-        battery_text = <&battery_text>;
-    };
-
-    layer_0_text: layer_0 {
-        text = "Layer 0: Default";
-    };
-    layer_1_text: layer_1 {
-        text = "Layer 1: Gaming";
-    };
-    layer_2_text: layer_2 {
-        text = "Layer 2: Macros";
-    };
-
-    battery_text: battery {
-        text = "Battery: %d%%";
-    };
-};
-
-&niceview {
-    status = "okay";
-    display_status = <&display_status>;
-};
